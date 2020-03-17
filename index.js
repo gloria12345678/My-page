@@ -26,3 +26,16 @@ $(document).ready(function(){;
   clickBody("#flip","#panel","#main")
   TochMove()
 }); 
+
+var json = 'zh.json'
+fetch(json)
+.then(function(response) {
+  if (!response.ok) {
+   throw new Error(" status = " + response.status);
+ }
+ return response.json();
+ console.log(response);
+})
+.then(function(json) {
+  console.log(json);
+})
