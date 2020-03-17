@@ -27,7 +27,7 @@ $(document).ready(function(){;
   TochMove()
 }); 
 
-var json = 'zh.json'
+var json = 'https://gloria12345678.github.io/My-page/zh.json'
 fetch(json)
 .then(function(response) {
   if (!response.ok) {
