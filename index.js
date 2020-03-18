@@ -27,14 +27,15 @@ $(document).ready(function(){;
   TochMove()
 }); 
 
-var json = 'https://gloria12345678.github.io/My-page/zh.json'
+var zh_json = 'https://gloria12345678.github.io/My-page/zh.json'
+var jp_json = 'https://gloria12345678.github.io/My-page/jp.json'
+var json = 'https://gloria12345678.github.io/My-page/en.json'
 fetch(json)
 .then(function(response) {
   if (!response.ok) {
    throw new Error(" status = " + response.status);
  }
  return response.json();
- console.log(response);
 })
 .then(function(json) {
   console.log(json);
