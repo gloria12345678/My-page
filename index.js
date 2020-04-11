@@ -26,41 +26,44 @@ $(document).ready(function(){;
   clickBody("#flip","#panel","#main")
   TochMove()
 }); 
-// var zh_json = 'https://gloria12345678.github.io/My-page/zh.json'
-// 
-// var en_son = 'https://gloria12345678.github.io/My-page/en.json'
 function json(){
   var i18_jp = document.getElementById('jp');
+  i18_jp.addEventListener('click', i18_japan, true);
+    function i18_japan (){
+      var jp_json = 'https://gloria12345678.github.io/My-page/jp.json';
+      console.log(jp_json)
+        fetch_i18(jp_json)
+    }
+
   var i18_en = document.getElementById('en');
+  i18_en.addEventListener('click', i18_english, true);
+    function i18_english (){
+      var en_json = 'https://gloria12345678.github.io/My-page/en.json';
+      console.log(en_json)
+      fetch_i18(en_json)
+    };
+
   var i18_ch = document.getElementById('ch');
-  var jp_json = 'https://gloria12345678.github.io/My-page/jp.json';
-  var en_json = 'https://gloria12345678.github.io/My-page/jp.json';
-  var ch_json = 'https://gloria12345678.github.io/My-page/jp.json';
-  i18_jp.addEventListener('click', i18, true);
-    function i18 (){
-      feten()
-      };
-  i18_en.addEventListener('click', i18, true);
-      function i18 (){
-        feten()
-        };
-  i18_ch.addEventListener('click', i18, true);
-        function i18 (){
-          feten()
-          };
-  function feten (){
-      fetch(jp_json)
-      .then(function(response) {
+  i18_ch.addEventListener('click', i18_china, true);
+    function i18_china (){
+      var ch_json = 'https://gloria12345678.github.io/My-page/ch.json';
+      console.log(ch_json)
+      fetch_i18(ch_json)
+    };
+
+  function fetch_i18 (json){
+    fetch(json)
+    .then(function(response) {
         if (!response.ok) {
           throw new Error(" status = " + response.status);
         }
         return response.json();
       })
-      .then(function(jp_json) {
+      .then(function(json) {
         var name = document.getElementById('name')
-        var div ='<div>'+jp_json[0].name+'<div>'
+        var div ='<div>'+json[0].name+'<div>'
         name.innerHTML = div
-         console.log(jp_json);
+         console.log(json);
         })
   }
 }
