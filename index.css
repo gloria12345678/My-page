@@ -121,3 +121,22 @@ box-shadow: 10px 10px 5px #888888;
   background-image: linear-gradient(-222deg, #ffbdbd, #5d69ff);
   box-shadow: 10px 10px 5px #888888;
 }
+.pro3{
+  width: 90%;
+  height: 470px;
+background-color: burlywood;
+  overflow-x:scroll;
+  overflow-y:hidden;
+}
+.sss{
+  width: 1200px;
+  height: 470px;
+  background-color: #5d69ff;
+}
+.img1s{
+  width: 350px;
+  height: 450px;
+  background-color: #fbb3c4;
+  float: left;
+  margin: 10px;
+}
