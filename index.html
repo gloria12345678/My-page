@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="swiper.min.css">
+</head>
 </head>
 <body>       
 <div id="flip">
@@ -29,16 +31,29 @@
     </div>
     <div class="pro2"></div>
     <div class="pro2"></div>
-    <div class="pro3">
-        <div id="sss" class="sss">
-             <div class="img1s"></div>
-             <div class="img1s"></div>
-             <div class="img1s"></div>
-        </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+      </div>
     </div>
 </div>
 </body>
 <script src="swiper.min.js"></script>
 <script src="index.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+    });
+  </script>
 </html>
 

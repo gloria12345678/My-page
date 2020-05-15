@@ -121,22 +121,30 @@ box-shadow: 10px 10px 5px #888888;
   background-image: linear-gradient(-222deg, #ffbdbd, #5d69ff);
   box-shadow: 10px 10px 5px #888888;
 }
-.pro3{
+.swiper-container {
   width: 90%;
-  height: 470px;
-background-color: burlywood;
-  overflow-x:scroll;
-  overflow-y:hidden;
-}
-.sss{
-  width: 1200px;
-  height: 470px;
-  background-color: #5d69ff;
-}
-.img1s{
-  width: 350px;
   height: 450px;
-  background-color: #fbb3c4;
-  float: left;
-  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  width: 90%;
+  height: 430px;
+  text-align: center;
+  font-size: 18px;
+  background: #000000;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }

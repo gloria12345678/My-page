@@ -1,0 +1,38 @@
+include head.pug
+link(rel="stylesheet" href="css/staff.css")
+div(class="Titles")
+  <div class="stafftitle">
+div(id="getMyStaff")
+  //- div(class="staff")
+    div(class="staffBox")
+      div(class="staPhotoffBox")
+        div(class="staBigPhotoffBox")
+          div(class="swiper-container" id="swiper0")
+            div(class="swiper-wrapper")
+              div(class="swiper-slide")
+                img(id="img1" src="staff/a.jpg")
+              div(class="swiper-slide")
+                img(id="img2" src="staff/all.jpg")
+              div(class="swiper-slide")
+                img(id="img3" src="staff/all.jpg")    
+        div(class="staPhotoffBoxSmall")
+          ul
+            li
+              img(id="" src="staff/a.jpg")
+            li
+              img(id="" src="staff/all.jpg")
+            li
+              img(id="" src="staff/all.jpg")
+      div(class="txt")
+        h2(id="name") 歩み
+        br
+        h2(id="old") 年齢:２２
+        br
+        h3(id="sizi") 3サイズ：B:83　W:56　H：85
+        br
+        h4(id="txt") 若々しく華やかな雰囲気のイマドキセラピスト!
+//- script(src="swiper.min.js")
+script(src="js/girl.js")
+include foot.pug
+//-  for(var i=0:i<30;i++){
+  //- }
