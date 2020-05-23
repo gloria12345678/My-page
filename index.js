@@ -60,9 +60,20 @@ function json(){
         return response.json();
       })
       .then(function(json) {
-        var name = document.getElementById('name')
+        var name = document.getElementsByClassName('name')
+        console.log(name)
+        console.log(name.length)
+        var body = document.body.clientWidth
+        console.log(body)
+        if(body<750){
+          var ArrayNum =0
+        }
+        else{
+          ArrayNum =1
+        }
+        console.log(ArrayNum)
         var div ='<div>'+json[0].name+'<div>'
-        name.innerHTML = div
+        name[ArrayNum].innerHTML = div
          console.log(json);
         })
   }

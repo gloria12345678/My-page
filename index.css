@@ -1,4 +1,6 @@
-
+.Pcdisplay{
+  display: none;
+}
 body:before {
   content: "";
   display: block;
@@ -14,19 +16,22 @@ body:before {
   -o-background-size: cover;
   background-size: cover;
 }
+.i18s{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 #flip{
-  background-image: url(back.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #fbb3c4;
-  background-size: cover;
 	padding:5px;
 	text-align:center;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(-202deg, #6439a5, #6d4bb9, #677dd0, #6fb2cf, #58dafa 78%);
+  background-image: url(img/2020-05-16\ 14.59.26.png);
+  background-size: cover;
 }
 .logo{
   width: 250px;
@@ -34,9 +39,11 @@ body:before {
   background-color: coral;
 }
 .someting{
+  margin-top: 300px;
   width: 250px;
   height: 100px;
-  background-color:sandybrown;
+  font-size: 30px;
+  color: #ffffff;
 }
 #panel
 {
@@ -46,7 +53,7 @@ body:before {
 * {  
   margin: 0;  
   padding: 0; 
-  margin: 0px auto; 
+  /* margin: 0px auto;  */
 }  
 .i18{
   background-color: lightblue;
@@ -147,4 +154,127 @@ box-shadow: 10px 10px 5px #888888;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+@media screen and (min-width:750px) {
+  #flip{
+    display: none;
+  }
+ #main{
+  display: none;
+ }
+ .Pcdisplay{
+   display: block;
+ }
+.head{
+  width: 100%;
+  height: 605px;
+  background-color: #232323;
+  background-image: url(img/2020-05-16\ 14.59.26.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+  flex-basis:700px;
+  display: flex;
+  align-items: flex-end;
+  justify-content:space-around;
+}
+/* .head{
+  width: 651px;
+  height: 768px;
+
+} */
+.tit{
+  height: 382px;
+  width: 315px;
+  color: #ffffff;
+  font-size: 30px;
+}
+.ProImg{
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  float: left;
+  margin-top: 52px;
+  margin-right: 15px;
+}
+.BI{
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(-228deg, #ffffff 80%, #444343 20%);
+    box-shadow: 10px 10px 5px #888888;
+}
+.iconImg{
+  width: 60px;
+  height: 60px;
+  background-image: url(img/icon1.png);
+background-size: 100%;
+border-bottom: 2px solid black;
+}
+.iconImg1{
+  width: 60px;
+  height: 60px;
+  background-image: url(img/icon2.png);
+background-size: 100%;
+border-bottom: 2px solid black;
+}
+.i{
+  width: 300px;
+  height: 60px;
+  font-size: 29px;
+  text-align: center;
+  line-height: 69px;
+  border-bottom: 2px solid black;
+}
+.BItit{
+  width: 100%;
+  height: 90px;
+  background-color: #ffffff;
+  color: #232323;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BItxt{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BItext{
+  width: 400px;
+  height: 300px;
+}
+.skills{
+  width: 170px;
+  height: 185px;
+  background-color: aqua;
+}
+.skillImg{
+  width: 90px;
+  height: 90px;
+  background-color: #000000;
+  border-radius: 50%;
+  float: left;
+  margin-top: 52px;
+  margin-right: 15px;
+}
+}
+@media screen and (min-width:1250px) { 
+.head{
+  background-image:none; 
+  display: flex;
+  align-items: flex-end;
+  justify-content:space-around; 
+}
+.HeadBackGrumdImg{
+  width: 651px;
+  height: 768px;
+  background-image: url(img/2020-05-16\ 14.59.26.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
 }
