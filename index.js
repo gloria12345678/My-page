@@ -61,7 +61,8 @@ function json(){
       })
       .then(function(json) {
         var name = document.getElementsByClassName('name')
-        var pro = document.getElementsByClassName('text')
+        var pro = document.getElementsByClassName('text1')
+        var pro1 = document.getElementsByClassName('text2')
         var body = document.body.clientWidth
         console.log(body)
         if(body<750){
@@ -73,8 +74,10 @@ function json(){
         console.log(ArrayNum)
         var div ='<div>'+json[0].name+'<div>'
         name[ArrayNum].innerHTML = div
-        var div ='<p>'+json[0].name+'</p><p>'+json[0].sex+'</p><p>'+json[0].old+'</p><p>'+json[0].telephone+'</p><p>'+json[0].email+'</p><p>'+json[0].access+'</p><p>'+json[0].page+'</p>';
-        text[ArrayNum].innerHTML = div
+        var txt1 ='<p>'+json[0].name+'</p><p>'+json[0].sex+'</p><p>'+json[0].old+'</p><p>'+json[0].telephone+'</p><p>'+json[0].email+'</p><p>'+json[0].pege+'</p>';
+        pro[ArrayNum].innerHTML = txt1
+        var txt2 ='<p>'+json[0].name+'</p><p>'+json[0].birthday+'</p><p>'+json[0].access+'</p><p>'+json[0].Education+'</p><p>'+json[0].LastEducation+'</p>';
+        pro1[ArrayNum].innerHTML = txt2
         })
   }
 }
