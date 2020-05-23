@@ -1,13 +1,10 @@
 
-[ 
-    { 
-    "name":"chlolia", 
-    "sex":"aad", 
-    "email":"zhaom" 
+[  { 
+    "name":"キョクゲイ", 
+    "sex":"女", 
+    "telephone":"zhaom" ,
+    "email":"zhaom", 
+    "access":"zhaom" ,
+    "page":"zhaom" 
     }, 
-    { 
-    "name":"lisa", 
-    "sex":"dd", 
-    "email":"zhang3.com" 
-    }
 ] 

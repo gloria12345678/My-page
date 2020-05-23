@@ -188,7 +188,7 @@ box-shadow: 10px 10px 5px #888888;
   height: 382px;
   width: 315px;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
 }
 .ProImg{
   width: 90px;
@@ -247,6 +247,14 @@ border-bottom: 2px solid black;
 .BItext{
   width: 400px;
   height: 300px;
+}
+.text{
+  width: 77%;
+  height: 70%;
+  padding: 15%;
+}
+.text ,p{
+margin-bottom: 22px;
 }
 .skills{
   width: 170px;

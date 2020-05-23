@@ -61,8 +61,7 @@ function json(){
       })
       .then(function(json) {
         var name = document.getElementsByClassName('name')
-        console.log(name)
-        console.log(name.length)
+        var pro = document.getElementsByClassName('text')
         var body = document.body.clientWidth
         console.log(body)
         if(body<750){
@@ -74,7 +73,8 @@ function json(){
         console.log(ArrayNum)
         var div ='<div>'+json[0].name+'<div>'
         name[ArrayNum].innerHTML = div
-         console.log(json);
+        var div ='<p>'+json[0].name+'</p><p>'+json[0].sex+'</p><p>'+json[0].old+'</p><p>'+json[0].telephone+'</p><p>'+json[0].email+'</p><p>'+json[0].access+'</p><p>'+json[0].page+'</p>';
+        text[ArrayNum].innerHTML = div
         })
   }
 }
