@@ -60,6 +60,7 @@ function json(){
         return response.json();
       })
       .then(function(json) {
+        console.log(json)
         var name = document.getElementsByClassName('name')
         var pro = document.getElementsByClassName('text1')
         var pro1 = document.getElementsByClassName('text2')
