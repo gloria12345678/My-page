@@ -76,7 +76,7 @@ function json(){
         name[ArrayNum].innerHTML = div
         var txt1 ='<p>'+json[0].name+'</p><p>'+json[0].sex+'</p><p>'+json[0].old+'</p><p>'+json[0].telephone+'</p><p>'+json[0].email+'</p><p>'+json[0].pege+'</p>';
         pro[ArrayNum].innerHTML = txt1
-        var txt2 ='<p>'+json[0].name+'</p><p>'+json[0].birthday+'</p><p>'+json[0].access+'</p><p>'+json[0].Education+'</p><p>'+json[0].LastEducation+'</p>';
+        var txt2 ='<p>'+json[0].birthday+'</p><p>'+json[0].access+'</p><p>'+json[0].education+'</p><p>'+json[0].lasteducation+'</p>';
         pro1[ArrayNum].innerHTML = txt2
         })
   }
